@@ -18,6 +18,7 @@ LOCAL_APPS = [
     'myproject.common.apps.CommonConfig',
     'myproject.users.apps.UsersConfig',
     'myproject.authentication.apps.AuthenticationConfig',
+    'myproject.blog.apps.BlogConfig',
 ]
 
 THIRD_PARTY_APPS = [
