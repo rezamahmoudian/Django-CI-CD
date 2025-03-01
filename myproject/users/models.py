@@ -20,7 +20,6 @@ class BaseUserManager(BUM):
 
         user.full_clean()
         user.save(using=self._db)
-
         return user
 
     def create_superuser(self, email, password=None):
@@ -65,5 +64,3 @@ class Profile(models.Model):
 
     def __str__(self):
         return f"{self.user} >> {self.bio}"
-
-

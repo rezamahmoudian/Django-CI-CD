@@ -6,7 +6,7 @@ from typing import Dict
 from drf_spectacular.utils import extend_schema
 
 from myproject.api.pagination import LimitOffsetPagination
-from myproject.blog.models import Product
+# from myproject.blog.models import Product
 
 from myproject.blog.selectors.product import get_product
 from myproject.blog.services.product import create_product
@@ -31,7 +31,7 @@ class ProductAPI(APIView):
 
     class OutputSerializer(serializers.ModelSerializer):
         class Meta:
-            model = Product
+            # model = Product
             fields = ['name', 'created_at', 'updated_at']
 
     @extend_schema(responses=OutputSerializer)
